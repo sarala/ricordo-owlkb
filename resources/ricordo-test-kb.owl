@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ricordo.eu/ricordo.owl#"
+     xml:base="http://www.ricordo.eu/ricordo.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ricordo="http://www.ricordo.eu/ricordo.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:quality="http://purl.org/obo/owlapi/quality#"
+     xmlns:chebi_ontology="http://purl.org/obo/owlapi/chebi_ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ricordonto="http://www.ricordo.eu/ricordo-ontology.owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:fma="http://purl.org/obo/owlapi/fma#"
+     xmlns:gene_ontology="http://purl.org/obo/owlapi/gene_ontology#">
+    <owl:Ontology rdf:about="http://www.ricordo.eu/ricordo.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ricordo.eu/ricordo.owl#disjointWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#inheres-in -->
+
+    <rdf:Description rdf:about="http://www.ricordo.eu/ricordo.owl#inheres-in">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricordo:inheres-in</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#part-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.ricordo.eu/ricordo.owl#part-of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricordo:part-of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#ObjectProperty -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#ObjectProperty"/>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_1 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO entity</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top domain class in RICORDO&#39;s test KB. This is not OWL:Thing. Every class is ought to be defined as a subclass of this class whether directly or via a restriction. Every individual, if any, ought to be an instance of this class, if only in virtue of inference.</rdfs:comment>
+    </owl:Class>
+    
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_2 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_1"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO&#39;s test KB class of objects. Entities that i) stand in mereological relationships (part-of) and ii) for which attributes can be specified (inheres-in).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_21 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_21">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (2) subclass 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_2"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of objects. This is for example, heart in FMA.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_22 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_22">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (2) subclass 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_2"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes. This is for example, right kidney in FMA.</rdfs:comment>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_23 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_23">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (2) subclass 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes. RICORDO_23 is a class of parts (ricordo:part-of) of instances of RICORDO_21. For example, if RICORDO_21 were the FMA&#39;s heart, RICORDO_23 could be the FMA&#39;s right atrium.</rdfs:comment>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_22"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_24 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_24">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (2) subclass 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes. RICORDO_24 is a class of parts (ricordo:part-of) of instances of RICORDO_21, that is distinct from its sibling RICORDO_23. For example, if RICORDO_21 were the FMA&#39;s heart and RICORDO_23 the FMA&#39;s right atrium, RICORDO_24 could be the FMA&#39;s left ventricle.</rdfs:comment>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_22"/>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_23"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_25 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_25">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (2) subclass 5</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#part-of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of objects using a restriction for its definition following RICORDO composite patterns. The class of parts of RICORDO_21. For example, if RICORDO_21 were the FMA&#39;s heart, RICORDO_23 would be the class of parts of the FMA heart. In the current test KB, it is expected that RICORDO_25 will have RICORDO_21 (reflexivity of parthood) and RICORDO_23 and RICORDO_24 as children.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_3 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO attributes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_1"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO&#39;s test KB class of attributes. Property inheres-in to associate an attribute to an object. Treatment simulates PATO.</rdfs:comment>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_31 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_31">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO attribute (3) subclass 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_3"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes. This is for example, volume in PATO.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_32 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_32">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO attribute (3) subclass 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_3"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes. This is for example, size in PATO.</rdfs:comment>
+        <disjointWith rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_33 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_33">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (3) subclass 3</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_31"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#inheres-in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes using a restriction for its definition following RICORDO composite patterns. The class of RICORDO_31 that inhere in (ricordo:inheres-in) RICORDO_21. For example, if RICORDO_21 were the FMA&#39;s heart and RICORDO_31 were PATO volume, RICORDO_33 would be the class of (PATO) volumes of (FMA) hearts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_34 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_34">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (3) subclass 4</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_31"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#inheres-in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_23"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes using a restriction for its definition following RICORDO composite patterns. The class of RICORDO_31 that inhere in (ricordo:inheres-in) RICORDO_23. For example, if RICORDO_23 were the FMA&#39;s right atrium and RICORDO_31 were PATO volume, RICORDO_34 would be the class of (PATO) volumes of (FMA) right atria.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_35 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_35">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (3) subclass 5</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_31"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#inheres-in"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_24"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes using a restriction for its definition following RICORDO composite patterns. The class of RICORDO_31 that inhere in (ricordo:inheres-in) RICORDO_24. For example, if RICORDO_24 were the FMA&#39;s left ventricle and RICORDO_31 were PATO volume, RICORDO_35 would be the class of (PATO) volumes of (FMA) left ventricles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_36 -->
+
+    <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_36">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RICORDO object (3) subclass 6</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_31"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#inheres-in"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ricordo.eu/ricordo.owl#part-of"/>
+                                <owl:someValuesFrom rdf:resource="http://www.ricordo.eu/ricordo.owl#RICORDO_21"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A RICORDO test KB class of attributes using a restriction for its definition following RICORDO composite patterns. The class of RICORDO_31 that inhere in (ricordo:inheres-in) parts of instances of the class RICORDO_21. For example, if RICORDO_21 were the FMA&#39;s heart and RICORDO_31 were PATO volume, RICORDO_36 would be the class of (PATO) volumes of (FMA) parts of hearts. In the current test KB, it is expected that RICORDO_36 will have RICORDO_33 (e.g. volumes of hearts), RICORDO_34 (e.g. volumes of right atria) and RICORDO_35 (e.g. volumes of left ventricles) as children.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#inheres-in -->
+
+    <owl:NamedIndividual rdf:about="http://www.ricordo.eu/ricordo.owl#inheres-in">
+        <rdf:type rdf:resource="http://www.ricordo.eu/ricordo.owl#ObjectProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricordo:inheres-in</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ricordo.eu/ricordo.owl#part-of -->
+
+    <owl:NamedIndividual rdf:about="http://www.ricordo.eu/ricordo.owl#part-of">
+        <rdf:type rdf:resource="http://www.ricordo.eu/ricordo.owl#ObjectProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ricordo:part-of</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

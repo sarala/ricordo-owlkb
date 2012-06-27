@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="configProperties" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>src/main/resources/config.properties</value>
+            </list>
+        </property>
+    </bean>-->
+
+    <bean id="config-1" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="order" value="1"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="location" value="config.properties"/>
+    </bean>
+
+    <bean id="config-2" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="order" value="2"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="location" value="defaultconfig.properties"/>
+    </bean>
+
+
+    <bean id="owlLinkKBService" class="uk.ac.ebi.ricordo.owlkb.service.OwlLinkKbServiceImpl">
+        <constructor-arg name="serverPort" value="${owllink.server.port}"/>
+        <constructor-arg name="serverUrl" value="${owllink.server.url}"/>
+        <constructor-arg name="kbNs" value="${kb.ns}"/>
+        <constructor-arg name="docIRI" ref="docIRI"/>
+        <constructor-arg name="owlOntologyManager" ref="owlManager"/>
+        <constructor-arg name="queryConstructorService" ref="queryConstructorServiceImpl"/>
+    </bean>
+
+    <bean id="owlKbElkService" class="uk.ac.ebi.ricordo.owlkb.service.OwlKbServiceImlp">
+        <constructor-arg name="kbNs" value="${kb.ns}"/>
+        <constructor-arg name="queryConstructorService" ref="queryConstructorServiceImpl"/>
+        <constructor-arg name="owlOntologyManager" ref="owlManager"/>
+        <constructor-arg name="reasonerFactory" ref="reasonerFactory"/>
+    </bean>
+
+    <bean id="reasonerFactory" class="org.semanticweb.elk.owlapi.ElkReasonerFactory" />
+
+    <bean id="owlManager" class="org.semanticweb.owlapi.apibinding.OWLManager" factory-method="createOWLOntologyManager"/>
+
+    <bean id="docIRI" class="org.semanticweb.owlapi.model.IRI" factory-method="create">
+        <constructor-arg name="file" value="${kb.file}" type="java.io.File" />
+    </bean>
+
+    <bean id="queryConstructorServiceImpl" class="uk.ac.ebi.ricordo.owlkb.service.QueryConstructorServiceImpl">
+        <constructor-arg name="docIRI" ref="docIRI"/>
+        <constructor-arg name="owlOntologyManager" ref="owlManager"/>
+    </bean>
+
+    <bean id="queryTemplateServiceImpl" class="uk.ac.ebi.ricordo.owlkb.service.QueryTemplateServiceImpl">
+        <constructor-arg name="queryTemplateFile" value="${qt.file}" type="java.io.File"/>
+    </bean>
+</beans>
