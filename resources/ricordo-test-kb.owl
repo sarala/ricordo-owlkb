@@ -93,6 +93,7 @@
     </owl:Class>
     
 
+
     <!-- http://www.ricordo.eu/ricordo.owl#RICORDO_2 -->
 
     <owl:Class rdf:about="http://www.ricordo.eu/ricordo.owl#RICORDO_2">

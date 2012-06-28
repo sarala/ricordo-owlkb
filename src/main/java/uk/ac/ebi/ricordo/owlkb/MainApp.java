@@ -15,10 +15,10 @@ import java.util.ArrayList;
  */
 public class MainApp {
     public static void main(String [] args){
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("src/main/resources/ricordo-owlkb-config.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:ricordo-owlkb-config.xml");
         OwlKbService owlKbService = (OwlKbService)ctx.getBean("owlLinkKBService");
         owlKbService.startService();
-        ArrayList<Term> list = owlKbService.getSubTerms("part_of some FMA_7088");
+        ArrayList<Term> list = owlKbService.getSubTerms("RICORDO_1");
         for(Term term: list){
             System.out.println(term.getId());
         }

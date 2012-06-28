@@ -24,7 +24,7 @@ import static junit.framework.Assert.assertEquals;
 @ContextConfiguration(locations={"classpath:ricordo-owlkb-config.xml"})
 public class OwlKbServiceImplTest {
 
-    @Qualifier("owlKbElkService")
+    @Qualifier("owlLinkKBService")
     @Autowired
     private OwlKbService owlKbService;
 
@@ -41,8 +41,10 @@ public class OwlKbServiceImplTest {
     @Test
     public void testGetSubTerms(){
         ArrayList<Term> list = owlKbService.getSubTerms("RICORDO_1");
-        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_2",list.get(0).getId());
-        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_3",list.get(1).getId());
+        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_36",list.get(0).getId());
+        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_21",list.get(1).getId());
+        assertEquals(14,list.size());
+
     }
 
     @Test
@@ -55,16 +57,18 @@ public class OwlKbServiceImplTest {
     public void testGetTerms(){
         ArrayList<Term> list = owlKbService.getTerms("RICORDO_3");
         assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_3",list.get(0).getId());
-        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_32",list.get(1).getId());
-        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_31",list.get(2).getId());
+        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_36",list.get(1).getId());
+        assertEquals("http://www.ricordo.eu/ricordo.owl#RICORDO_34",list.get(2).getId());
     }
 
     @Test
     public void testAddandDeleteTerm() throws Exception {
         ArrayList<Term> list = owlKbService.addTerm("RICORDO_1 and part-of some RICORDO_2");
-        System.out.println(list.get(0).getId());
         assertEquals(1, list.size());
-        list = owlKbService.deleteTerm(list.get(0).getId());
+        String id = list.get(0).getId();
+        id = id.substring(id.indexOf('#')+1);
+        System.out.println(id);
+        list = owlKbService.deleteTerm(id);
         assertEquals(0,list.size());
     }
 
