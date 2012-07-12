@@ -1,5 +1,23 @@
+
+/*
+ * Copyright 2012 EMBL-EBI
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package uk.ac.ebi.ricordo.owlkb.service;
 
+import org.apache.log4j.Logger;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.owllink.*;
 import org.semanticweb.owlapi.owllink.builtin.requests.*;
@@ -34,6 +52,8 @@ public class OwlLinkKbServiceImpl implements OwlKbService {
     private final String serverUrl;
     private final String serverPort;
     private QueryConstructorService queryConstructorService;
+
+    Logger logger = Logger.getLogger(OwlKbServiceImlp.class);
 
     public OwlLinkKbServiceImpl(String serverUrl, String serverPort, String kbNs, IRI docIRI, OWLOntologyManager owlOntologyManager, QueryConstructorService queryConstructorService){
         this.serverUrl = serverUrl;
@@ -170,6 +190,7 @@ public class OwlLinkKbServiceImpl implements OwlKbService {
     }
 
     public void startService() {
+        logger.info("OWLlink server starting.");
         startPelletServer();
         setUpReasoner(serverUrl, serverPort);
         createKB();
@@ -193,8 +214,8 @@ public class OwlLinkKbServiceImpl implements OwlKbService {
             reasoner = factory.createNonBufferingReasoner(owlOntologyManager.createOntology(), reasonerConfiguration);
         }catch (OWLlinkReasonerIOException e){
             //restart service
-           startService();
-           e.printStackTrace();
+            logger.info("OWLlink server is not running.");
+            startService();
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (OWLOntologyCreationException e) {

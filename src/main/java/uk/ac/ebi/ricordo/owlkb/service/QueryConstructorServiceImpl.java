@@ -1,3 +1,19 @@
+/*
+ * Copyright 2012 EMBL-EBI
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package uk.ac.ebi.ricordo.owlkb.service;
 
 import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxEditorParser;
@@ -34,11 +50,7 @@ public class QueryConstructorServiceImpl implements QueryConstructorService{
         }
     }
 
-    /**
-     * Run a query constructed in manchester query syntax to create an OWL class expression
-     * @param manchesterQuery
-     * @return OWLClassExpression
-     */
+
     public OWLClassExpression runManchesterQuery(String manchesterQuery){
         ManchesterOWLSyntaxEditorParser parser = new ManchesterOWLSyntaxEditorParser(owlOntologyManager.getOWLDataFactory(), manchesterQuery);
         parser.setDefaultOntology(queryOntology);
@@ -57,10 +69,6 @@ public class QueryConstructorServiceImpl implements QueryConstructorService{
         return classExp;
     }
 
-    /**
-     * Add axioms to a OWL file
-     * @param axiomSet
-     */
     public void addAxioms(Set<OWLAxiom> axiomSet) {
         owlOntologyManager.addAxioms(queryOntology, axiomSet);
         try {
@@ -70,10 +78,6 @@ public class QueryConstructorServiceImpl implements QueryConstructorService{
         }
     }
 
-    /**
-     * Delete axioms from a OWL file
-     * @param axiomSet
-     */
     public void deleteAxioms(Set<OWLAxiom> axiomSet) {
         owlOntologyManager.removeAxioms(queryOntology, axiomSet);
         try {
@@ -83,10 +87,6 @@ public class QueryConstructorServiceImpl implements QueryConstructorService{
         }
     }
 
-    /**
-     * Return OWLOntology
-     * @return OWLOntology
-     */
     public OWLOntology getQueryOntology() {
         return queryOntology;
     }

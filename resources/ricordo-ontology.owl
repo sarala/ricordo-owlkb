@@ -1,0 +1,370 @@
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY fma "http://purl.org/obo/owlapi/fma#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ricordo "http://www.ricordo.eu/ricordo.owl#" >
+    <!ENTITY quality "http://purl.org/obo/owlapi/quality#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY gene_ontology "http://purl.org/obo/owlapi/gene_ontology#" >
+    <!ENTITY chebi_ontology "http://purl.org/obo/owlapi/chebi_ontology#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ricordonto "http://www.ricordo.eu/ricordo-ontology.owl#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY hp-logical-definitions "http://purl.obolibrary.org/obo/hp/hp-logical-definitions#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ricordo.eu/ricordo.owl#"
+     xml:base="http://www.ricordo.eu/ricordo.owl#"
+     xmlns:chebi_ontology="http://purl.org/obo/owlapi/chebi_ontology#"
+     xmlns:gene_ontology="http://purl.org/obo/owlapi/gene_ontology#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ricordo="http://www.ricordo.eu/ricordo.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:quality="http://purl.org/obo/owlapi/quality#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:fma="http://purl.org/obo/owlapi/fma#"
+     xmlns:ricordonto="http://www.ricordo.eu/ricordo-ontology.owl#"
+     xmlns:hp-logical-definitions="&obo;hp/hp-logical-definitions#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     >
+
+<ObjectProperty rdf:about="&ricordonto;part-of">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:part-of</rdfs:label>
+    </ObjectProperty>
+    
+    <ObjectProperty rdf:about="&ricordonto;has-part">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:has-part</rdfs:label>
+    </ObjectProperty>
+
+   <ObjectProperty rdf:about="&ricordonto;contained-in">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:contained-in</rdfs:label>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="&ricordonto;participates-in">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:participates-in</rdfs:label>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="&ricordonto;has_participant">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:has_participant</rdfs:label>
+
+<!--        NOT EL <inverseOf rdf:resource="&ricordonto;participates-in"/> -->
+    </ObjectProperty>
+    
+    <ObjectProperty rdf:about="&ricordonto;inheres-in">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:inheres-in</rdfs:label>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="&ricordonto;occurs_in">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:occurs_in</rdfs:label>
+    </ObjectProperty>
+
+        
+    <ObjectProperty rdf:about="&ricordonto;start-of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:start-of</rdfs:label>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="&ricordonto;end-of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:end-of</rdfs:label>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="&ricordonto;results_in">
+
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:results_in</rdfs:label>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="&ricordonto;results_in_movement_of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:results_in_movement_of</rdfs:label>
+    </ObjectProperty>
+    
+    <ObjectProperty rdf:about="&ricordonto;results_in_transport_from">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:results_in_transport_from</rdfs:label>
+
+    </ObjectProperty>
+    
+    <ObjectProperty rdf:about="&ricordonto;results_in_transport_to">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:results_in_transport_to</rdfs:label>
+    </ObjectProperty>
+
+ <!-- sugar -->
+
+    <ObjectProperty rdf:about="&ricordonto;contained-in-part-of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:contained-in-part-of</rdfs:label>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ricordonto;contained-in"/>
+            <rdf:Description rdf:about="&ricordonto;part-of"/>
+        </propertyChainAxiom>
+    </ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="&ricordonto;participates-in-end-of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:participates-in-end-of</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ricordonto;participates-in"/>
+            <rdf:Description rdf:about="&ricordonto;end-of"/>
+        </owl:propertyChainAxiom>
+
+    </owl:ObjectProperty>
+    
+    
+    <owl:ObjectProperty rdf:about="&ricordonto;inheres-in-part-of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:inheres-in-part-of</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ricordonto;inheres-in"/>
+            <rdf:Description rdf:about="&ricordonto;part-of"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="&ricordonto;inheres-in-contained-in-part-of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:inheres-in-contained-in-part-of</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ricordonto;inheres-in"/>
+            <rdf:Description rdf:about="&ricordonto;contained-in-part-of"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="&ricordonto;inheres-in-participates-in">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:inheres-in-participates-in</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ricordonto;inheres-in"/>
+            <rdf:Description rdf:about="&ricordonto;participates-in"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="&ricordonto;inheres_in_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">ricordo:inheres_in_part_of (generic)</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;inheres-in-part-of"/>  
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;inheres-in-contained-in-part-of"/>  
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;inheres-in-participates-in"/>  
+    </owl:ObjectProperty>
+
+
+<!-- mappings -->    
+
+
+    <owl:ObjectProperty rdf:about="&chebi_ontology;has_part">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">chebi:has_part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;has-part"/>
+    </owl:ObjectProperty>
+
+<!-- FMA -->
+
+    <owl:ObjectProperty rdf:about="&fma;attaches_to">
+        <rdfs:label rdf:datatype="&xsd;string">fma:attaches_to</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&fma;bounds">
+        <rdfs:label rdf:datatype="&xsd;string">fma:bounds</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&fma;branch_of">
+        <rdfs:label rdf:datatype="&xsd;string">fma:branch_of</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&fma;constitutional_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">fma:constitutional_part_of</rdfs:label>
+<!--        <rdfs:subPropertyOf rdf:resource="&oboInOwl;part_of"/> -->
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&fma;regional_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">fma:regional_part_of</rdfs:label>
+<!--        <rdfs:subPropertyOf rdf:resource="&oboInOwl;part_of"/> -->
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&fma;systemic_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">fma:systemic_part_of</rdfs:label>
+<!--        <rdfs:subPropertyOf rdf:resource="&oboInOwl;part_of"/> -->
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+    </owl:ObjectProperty>
+
+<!-- GO -->
+    <owl:ObjectProperty rdf:about="&gene_ontology;has_part">
+        <rdfs:label rdf:datatype="&xsd;string">go:has_part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;has-part"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&gene_ontology;regulates">
+        <rdfs:label rdf:datatype="&xsd;string">go:regulates</rdfs:label>
+    </owl:ObjectProperty>
+
+<!-- OBOInOWL -->
+   <owl:ObjectProperty rdf:about="&oboInOwl;part_of">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">oboinowl:part_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+    </owl:ObjectProperty>
+
+<!-- PATO -->
+    <owl:ObjectProperty rdf:about="&quality;has_part">
+        <rdfs:label rdf:datatype="&xsd;string">pato:has_part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;has-part"/>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="&quality;OBO_REL_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">pato:obo_part_of</rdfs:label>
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <owl:equivalentProperty rdf:resource="&oboInOwl;part_of"/>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&quality;OBO_REL_part_of"/>
+            <rdf:Description rdf:about="&ricordonto;contained-in"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ricordonto;contained-in"/>
+            <rdf:Description rdf:about="&quality;OBO_REL_part_of"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="&quality;inheres_in">
+        <rdfs:label rdf:datatype="&xsd;string">pato:inheres_in</rdfs:label>
+<!--        <owl:equivalentProperty rdf:resource="&ricordonto;inheres-in"/> -->
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;inheres-in"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="&quality;towards"> 
+        <rdfs:label rdf:datatype="&xsd;string">pato:towards</rdfs:label>
+    </owl:ObjectProperty>
+        
+        
+<!-- RO 
+    <owl:ObjectProperty rdf:about="&ro;contained_in">
+        <rdfs:label rdf:datatype="&xsd;string">ro:contained_in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;contained-in"/>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="&ro;part_of">
+        <rdfs:label rdf:datatype="&xsd;string">ro:part_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+    </owl:ObjectProperty>
+    -->
+ 
+<!-- Mappings to support HPO from xp in owl -->
+    
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <ObjectProperty rdf:about="&obo;BFO_0000050">
+        <rdfs:label rdf:datatype="&xsd;string">part of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;part-of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <ObjectProperty rdf:about="&obo;BFO_0000051">
+        <rdfs:label rdf:datatype="&xsd;string">has part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;has-part"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+
+    <ObjectProperty rdf:about="&obo;BFO_0000052">
+        <rdfs:label rdf:datatype="&xsd;string">inheres in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;hp/hp-logical-definitions#inheres_in_part_of"/>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;inheres-in"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <ObjectProperty rdf:about="&obo;BFO_0000057">
+        <rdfs:label rdf:datatype="&xsd;string">has participant</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;has_participant"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <ObjectProperty rdf:about="&obo;BFO_0000066">
+        <rdfs:label rdf:datatype="&xsd;string">occurs in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;occurs_in"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000070 -->
+
+    <ObjectProperty rdf:about="&obo;BFO_0000070">
+        <rdfs:label rdf:datatype="&xsd;string">towards</rdfs:label>
+<!--        <rdfs:subPropertyOf rdf:resource="&quality;towards"/> -->
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
+
+    <ObjectProperty rdf:about="&obo;RO_0002180">
+        <rdfs:label rdf:datatype="&xsd;string">qualifier</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">placeholder relation to indicate normality/abnormality.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions#adjacent_to -->
+
+    <ObjectProperty rdf:about="&obo;hp/hp-logical-definitions#adjacent_to">
+        <rdfs:label rdf:datatype="&xsd;string">adjacent_to</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions#contained_in -->
+
+    <ObjectProperty rdf:about="&obo;hp/hp-logical-definitions#contained_in">
+        <rdfs:label rdf:datatype="&xsd;string">contained in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;contained-in"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions#during -->
+
+    <ObjectProperty rdf:about="&obo;hp/hp-logical-definitions#during">
+        <rdfs:label rdf:datatype="&xsd;string">during</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions#has_central_participant -->
+
+    <ObjectProperty rdf:about="&obo;hp/hp-logical-definitions#has_central_participant">
+        <rdfs:label rdf:datatype="&xsd;string">has_central_participant</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000057"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions#inheres_in_part_of -->
+
+    <ObjectProperty rdf:about="&obo;hp/hp-logical-definitions#inheres_in_part_of">
+        <rdfs:label rdf:datatype="&xsd;string">inheres in part of</rdfs:label>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000052"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;inheres-in-part-of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions#results_in -->
+
+    <ObjectProperty rdf:about="&obo;hp/hp-logical-definitions#results_in">
+        <rdfs:label rdf:datatype="&xsd;string">results in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&ricordonto;results_in"/>
+    </ObjectProperty>
+    
+
+
+
+</rdf:RDF>
+
