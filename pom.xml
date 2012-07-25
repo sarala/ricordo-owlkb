@@ -9,17 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <profiles>
-        <profile>
-            <id>ebi-owllink-server</id>
-            <properties>
-                <ebi.owllink.server.url>ricordo-1.ebi.ac.uk</ebi.owllink.server.url>
-                <ebi.owllink.server.port>8081</ebi.owllink.server.port>
-            </properties>
-        </profile>
-    </profiles>
-
-
     <build>
         <finalName>ricordo-owlkb</finalName>
 

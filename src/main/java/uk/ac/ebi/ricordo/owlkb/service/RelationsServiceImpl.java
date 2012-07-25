@@ -24,30 +24,32 @@ import java.util.ArrayList;
 /**
  * Created by IntelliJ IDEA.
  * User: Sarala Wimalaratne
- * Date: 22/06/12
- * Time: 15:44
+ * Date: 13/07/12
+ * Time: 13:53
  */
-public class QueryTemplateServiceImpl implements QueryTemplateService {
+public class RelationsServiceImpl implements RelationsService{
 
-    private File queryTemplateFile;
+    private File relationsFile;
 
-    public QueryTemplateServiceImpl(File queryTemplateFile) {
-        this.queryTemplateFile = queryTemplateFile;
+    public RelationsServiceImpl(File relationsFile) {
+        this.relationsFile = relationsFile;
     }
 
-    public ArrayList<Query> getQueryTemplateList() {
-        ArrayList<Query> queryList = new ArrayList<Query>();
+    @Override
+    public ArrayList<Query> getRelationsList() {
+        ArrayList<Query> relationsList = new ArrayList<Query>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(queryTemplateFile));
+            BufferedReader reader = new BufferedReader(new FileReader(relationsFile));
             String strLine;
             while ((strLine = reader.readLine()) != null)   {
-                queryList.add(new Query(strLine));
+                relationsList.add(new Query(strLine));
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return queryList;
+        return relationsList;
+
     }
 }
