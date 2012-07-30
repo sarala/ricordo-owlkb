@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1b43b90-860b-4fd2-a832-f319c7f791c5" name="Default" comment="snapshot 1.0 to upload in maven">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/defaultconfig.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/querytemplates.txt" afterPath="$PROJECT_DIR$/src/main/resources/querytemplates.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/relations.txt" afterPath="$PROJECT_DIR$/src/main/resources/relations.txt" />
+    <list default="true" id="e1b43b90-860b-4fd2-a832-f319c7f791c5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/MainApp.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/MainApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/Query.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/Query.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/QueryList.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/QueryList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/Term.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/Term.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/TermList.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/TermList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbService.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImlp.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImlp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlLinkKbServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlLinkKbServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorService.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateService.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImplTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ricordo-owlkb-config.xml" afterPath="$PROJECT_DIR$/target/classes/ricordo-owlkb-config.xml" />
     </list>
     <ignored path="target/" />
     <ignored path=".idea/" />
@@ -78,7 +89,7 @@
       <file leaf-file-name="QueryTemplateServiceImplTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="55" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.62068963">
+            <state line="47" column="55" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.75949365">
               <folding />
             </state>
           </provider>
@@ -787,7 +798,11 @@
       <created>1343223105944</created>
       <updated>1343223105944</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="snapshot 1.0 to upload in maven">
+      <created>1343656317898</created>
+      <updated>1343656317898</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -805,13 +820,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32677165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32677165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15827923" sideWeight="0.43175852" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15827923" sideWeight="0.6732283" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27516234" sideWeight="0.43175852" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5682415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27516234" sideWeight="0.6732283" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5682415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1008,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="55" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.62068963">
+        <state line="47" column="55" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.75949365">
           <folding />
         </state>
       </provider>

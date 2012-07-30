@@ -20,18 +20,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="config-1" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="order" value="1"/>
-        <property name="ignoreResourceNotFound" value="true"/>
+    <bean id="config-properties" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:config.properties"/>
     </bean>
-
-    <bean id="config-2" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="order" value="2"/>
-        <property name="ignoreResourceNotFound" value="true"/>
-        <property name="location" value="classpath:defaultconfig.properties"/>
-    </bean>
-
 
     <bean id="owlLinkKBService" class="uk.ac.ebi.ricordo.owlkb.service.OwlLinkKbServiceImpl">
         <constructor-arg name="serverPort" value="${owllink.server.port}"/>
