@@ -43,11 +43,11 @@ public class QueryTemplateServiceImplTest {
     @Test
     public void testGetQueryTemplateList() throws Exception {
         ArrayList<Query> queries = queryTemplateService.getQueryTemplateList();
-        assertEquals("term", queries.get(0));
-        assertEquals("relation some term",queries.get(1));
-        assertEquals("relation some term and relation some term",queries.get(2));
-        assertEquals("relation some term or relation some term",queries.get(3));
-        assertEquals("term and relation some term",queries.get(4));
-        assertEquals("term and relation some ( relation some term )",queries.get(5));
+        assertEquals("term", queries.get(0).getQuery());
+        assertEquals("relation some term",queries.get(1).getQuery());
+        assertEquals("relation some term and relation some term",queries.get(2).getQuery());
+        assertEquals("relation some term or relation some term",queries.get(3).getQuery());
+        assertEquals("term and relation some term",queries.get(4).getQuery());
+        assertEquals("term and relation some ( relation some term )",queries.get(5).getQuery());
     }
 }

@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1b43b90-860b-4fd2-a832-f319c7f791c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/MainApp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/Query.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/QueryList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/Term.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/bean/TermList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImlp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/OwlLinkKbServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImplTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/relations.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/RelationsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/RelationsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ricordo-owlkb-config.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/querytemplates.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/defaultconfig.properties" afterPath="$PROJECT_DIR$/target/classes/defaultconfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="e1b43b90-860b-4fd2-a832-f319c7f791c5" name="Default" comment="snapshot 1.0 to upload in maven">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/defaultconfig.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/querytemplates.txt" afterPath="$PROJECT_DIR$/src/main/resources/querytemplates.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/relations.txt" afterPath="$PROJECT_DIR$/src/main/resources/relations.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ricordo-owlkb-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/ricordo-owlkb-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java" />
     </list>
-    <ignored path="ricordo-owlkb.iws" />
-    <ignored path=".idea/workspace.xml" />
+    <ignored path="target/" />
+    <ignored path=".idea/" />
+    <ignored mask="*.iml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,49 +66,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ricordo-owlkb-config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ricordo-owlkb-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="10" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-30.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="8" selection-start="4080" selection-end="4117" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="9" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="14" column="17" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.txt">
+      <file leaf-file-name="QueryTemplateServiceImplTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.19313304">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OwlKbServiceImplTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="9" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
+            <state line="47" column="55" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.62068963">
               <folding />
             </state>
           </provider>
@@ -143,28 +92,27 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImlp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/OwlLinkKbServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/bean/Query.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.java" />
         <option value="$PROJECT_DIR$/resources/relations.txt" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/RelationsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/RelationsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/defaultconfig.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/ricordo-owlkb-config.xml" />
         <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -234,9 +182,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="24" />
-    <option name="width" value="1280" />
-    <option name="height" value="911" />
+    <option name="width" value="1282" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -266,6 +215,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricordo-owlkb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ricordo-owlkb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -434,20 +397,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ricordo-owlkb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ricordo-owlkb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -466,7 +415,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="project.structure.side.proportion" value="0.37062937" />
@@ -475,17 +424,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OwlKbServiceImplTest.testGetSubTerms">
+  <component name="RunManager" selected="JUnit.QueryTemplateServiceImplTest.testGetQueryTemplateList">
     <configuration default="false" name="MainApp" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -687,6 +636,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -713,24 +680,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -812,6 +761,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
@@ -833,18 +783,21 @@
       <created>1342098604949</created>
       <updated>1342098604949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="snapshot 1.0 to upload in maven">
+      <created>1343223105944</created>
+      <updated>1343223105944</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="911" extended-state="6" />
+    <frame x="-1" y="24" width="1282" height="916" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3172691" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39895013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -852,15 +805,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32677165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32677165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15097402" sideWeight="0.6732283" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15827923" sideWeight="0.43175852" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27597404" sideWeight="0.6732283" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37258688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27516234" sideWeight="0.43175852" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5682415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -962,115 +916,99 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/OwlLinkKbServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.13636364" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/bean/Term.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="14" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pato.owl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="4" selection-start="13692" selection-end="13704" vertical-scroll-proportion="0.021367522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/OwlKbService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="13" selection-start="822" selection-end="834" vertical-scroll-proportion="0.27385893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryConstructorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="1534" selection-end="1561" vertical-scroll-proportion="0.020746889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/go.owl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="30" selection-start="8869" selection-end="8869" vertical-scroll-proportion="0.74786323">
-          <folding />
-        </state>
+        <state line="149" column="30" selection-start="8869" selection-end="8869" vertical-scroll-proportion="0.74786323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImlp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="17" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.7219917">
-          <folding />
-        </state>
+        <state line="98" column="17" selection-start="3485" selection-end="3485" vertical-scroll-proportion="0.7219917" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/relations.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/relations.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/RelationsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="958" selection-end="958" vertical-scroll-proportion="0.3986014">
+        <state line="35" column="13" selection-start="958" selection-end="958" vertical-scroll-proportion="0.3986014" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ricordo-owlkb-config.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="7" selection-start="2881" selection-end="3085" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="4080" selection-end="4117" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="6" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="7" selection-start="501" selection-end="501" vertical-scroll-proportion="0.6745182">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/service/RelationsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.5804196">
-          <folding>
-            <element signature="e#0#1607#0" expanded="true" />
-          </folding>
+        <state line="47" column="5" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.5503212">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/OwlKbServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
+        <state line="45" column="9" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.033039648">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ricordo-owlkb-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ebi/ricordo/owlkb/bean/QueryList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="10" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-30.0">
+        <state line="42" column="5" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/querytemplates.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="4080" selection-end="4117" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+        <state line="14" column="17" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/ebi/ricordo/owlkb/service/QueryTemplateServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.19313304">
+        <state line="47" column="55" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.62068963">
           <folding />
         </state>
       </provider>
