@@ -29,9 +29,9 @@ import java.util.ArrayList;
  */
 public class RelationsServiceImpl implements RelationsService{
 
-    private File relationsFile;
+    private String relationsFile;
 
-    public RelationsServiceImpl(File relationsFile) {
+    public RelationsServiceImpl(String relationsFile) {
         this.relationsFile = relationsFile;
     }
 
@@ -39,7 +39,8 @@ public class RelationsServiceImpl implements RelationsService{
     public ArrayList<Query> getRelationsList() {
         ArrayList<Query> relationsList = new ArrayList<Query>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(relationsFile));
+            InputStream inputStream = QueryTemplateServiceImpl.class.getResourceAsStream(relationsFile);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             String strLine;
             while ((strLine = reader.readLine()) != null)   {
                 relationsList.add(new Query(strLine));

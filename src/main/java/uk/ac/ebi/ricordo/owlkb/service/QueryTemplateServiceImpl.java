@@ -29,16 +29,17 @@ import java.util.ArrayList;
  */
 public class QueryTemplateServiceImpl implements QueryTemplateService {
 
-    private File queryTemplateFile;
+    private String queryTemplateFile;
 
-    public QueryTemplateServiceImpl(File queryTemplateFile) {
+    public QueryTemplateServiceImpl(String queryTemplateFile) {
         this.queryTemplateFile = queryTemplateFile;
     }
 
     public ArrayList<Query> getQueryTemplateList() {
         ArrayList<Query> queryList = new ArrayList<Query>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(queryTemplateFile));
+            InputStream inputStream = QueryTemplateServiceImpl.class.getResourceAsStream(queryTemplateFile);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             String strLine;
             while ((strLine = reader.readLine()) != null)   {
                 queryList.add(new Query(strLine));

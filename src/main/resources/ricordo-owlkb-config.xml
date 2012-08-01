@@ -54,10 +54,10 @@
     </bean>
 
     <bean id="queryTemplateServiceImpl" class="uk.ac.ebi.ricordo.owlkb.service.QueryTemplateServiceImpl">
-        <constructor-arg name="queryTemplateFile" value="${qt.file}" type="java.io.File"/>
+        <constructor-arg name="queryTemplateFile" value="${qt.file}" />
     </bean>
 
     <bean id="relationsServiceImpl" class="uk.ac.ebi.ricordo.owlkb.service.RelationsServiceImpl">
-        <constructor-arg name="relationsFile" value="${relations.file}" type="java.io.File"/>
+        <constructor-arg name="relationsFile" value="${relations.file}" />
     </bean>
 </beans>
