@@ -193,7 +193,6 @@ public class OwlLinkKbServiceImpl implements OwlKbService {
         logger.info("OWLlink server starting.");
         startPelletServer();
         setUpReasoner(serverUrl, serverPort);
-        createKB();
     }
 
     private void startPelletServer(){
@@ -212,6 +211,7 @@ public class OwlLinkKbServiceImpl implements OwlKbService {
         try{
             OWLlinkReasonerConfiguration reasonerConfiguration = new OWLlinkReasonerConfiguration(new URL(serverUrl+":"+serverPort));
             reasoner = factory.createNonBufferingReasoner(owlOntologyManager.createOntology(), reasonerConfiguration);
+            createKB();
         }catch (OWLlinkReasonerIOException e){
             //restart service
             logger.info("OWLlink server is not running.");
@@ -232,7 +232,7 @@ public class OwlLinkKbServiceImpl implements OwlKbService {
             KB kbResponse = reasoner.answer(createKBRequest);
             reasoner.answer(new LoadOntologies(kbResponse.getKB(),docIRI));
         } catch (OWLlinkErrorResponseException e) {
-            e.printStackTrace();
+            logger.warn(e.getMessage());
         }
     }
 
