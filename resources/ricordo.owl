@@ -32,13 +32,13 @@
      >
    
  <owl:Ontology rdf:about="http://www.ricordo.eu/ricordo.owl">
-       	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/fma.owl"/>
-	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/go.owl"/>
-	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/pato.owl"/>
-	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/celltype.owl"/>
-	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/chebi.owl"/>
-       	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/ricordo-ontology.owl"/>
-	<owl:imports rdf:resource="file:/home/sarala/ricordoeu/ricordows/resources/hpo-xp.owl"/>
+       	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/fma.owl"/>
+	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/go.owl"/>
+	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/pato.owl"/>
+	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/celltype.owl"/>
+	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/chebi.owl"/>
+       	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/ricordo-ontology.owl"/>
+	<owl:imports rdf:resource="file:/homes/sarala/ricordo/ricordo-owlkb/resources/hpo-xp.owl"/>
    </owl:Ontology>
 
 
